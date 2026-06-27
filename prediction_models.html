@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <form method="post" action="http://127.0.0.1:8000/model/predict" enctype="multipart/form-data">
+            <label for="crim">CRIM:</label>
+            <input type="number" name="crim" step="0.0001">
+            <label for="zn">ZN:</label> 
+            <input type="number" name="zn" step="0.0001">
+        <label for="indus">Chas:</label>
+     
+            <input type="number" name="chas" step="0.00000001">
+            <label for="nox">NOX:</label>
+            <input type="number" name="nox" step="0.00001">
+            <label for="rm">RM:</label> 
+            <input type="number" name="rm" step="0.00001">
+            <label for="dis">DIS:</label>
+            <input type="number" name="dis" step="0.00001">
+          
+            
+            <label for="ptratio">PTRATIO:</label>
+            <input type="number" name="ptratio" step="0.0001">
+            <label for="black">BLACK:</label>
+            <input type="number" name="black" step="0.00001">
+            <label for="lstat">LSTAT:</label>
+            <input type="number" name="lstat" step="0.0001">
+
+            <button>Predict</button>
+        </form>        
+
+        <h1>Logistic Regression Model </h1>
+        <form method="post" action="http://127.0.0.1:8000/model/predict1" enctype="multipart/form-data">
+            <label for="text">Enter Text:</label>
+            <input type="text" name="text">
+            <button>Predict</button>
+    </body>
+</html>
